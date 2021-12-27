@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("../img/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 16px;
+}
+
+div.flexbox-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main {
+    background-color: #fff;
+    flex-basis: 450px;
+    height: 650px;
+    border-radius: 15px;
+}
+
+div.image img {
+    border-radius: 15px 15px 0 0;
+    min-width: auto;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: hsl(223, 47%, 23%);
+}
+
+div.card__text {
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5rem;
+    color: hsl(224, 23%, 55%);
+}
+
+div.card__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    height: 90px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.main > p { 
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+div.card__plan {
+    flex-basis: 50%;
+}
+
+div.card__button a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+}
+
+div.card__button a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_payment {
+    font-size: 1.063em;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color:hsl(225, 100%, 98%);
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 50px;
+    box-shadow:  0 5px 20px hsl(245, 75%, 65%);
+}
+
+.btn_payment:hover {
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(245, 75%, 65%);
+}
+
+.btn_cancel {
+    font-size: 1em;
+    font-weight: bold;
+    border: none; 
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 50px;
+}
+
+.btn_cancel:hover {
+    cursor: pointer;
+    color:hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+    body {
+        background-image: url("../img/pattern-background-mobile.svg");
+        background-size: cover;
+        font-size: 16px;
+    }
+    div.main {
+        flex-basis: 350px;
+        height: 600px;
+        margin: 15px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+   
+}
+
